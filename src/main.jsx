@@ -9,10 +9,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter basename={'/tip-calculator/'}>
   
 <Routes>
-<Route path="*" element={<App />}>
-  <Routes/>
-</BrowserRouter>
+<Route path="*" element={<App />}/>
+  </Routes>
+</BrowserRouter>   
+  </React.StrictMode>,)
 
-    
-  </React.StrictMode>,
-)
