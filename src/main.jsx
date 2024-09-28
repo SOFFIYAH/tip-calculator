@@ -7,10 +7,12 @@ import {BrowserRouter, Routes, Route} from "react"
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
   <BrowserRouter basename={'/tip-calculator/'}>
-  <Route exact path="/" component={Index} />
-</BrowserRouter>
+  
+<Routes>
 <Route path="*" element={<App />}>
-</Routes>
+  <Routes/>
+</BrowserRouter>
+
     
   </React.StrictMode>,
 )
